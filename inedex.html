@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Bonus</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        .botao {
+            background-color: rgb(255, 150, 111);
+            color: antiquewhite;
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+        }
+        body{
+            background-image: linear-gradient(45deg,  #ff0000, rgb(247, 113, 169));
+        }
+        .fio{
+            width: fit-content;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <center> 
+    <h2>Ganhe Premios da loja</h2>
+    <h1>ANAVITÓRIA</h1>
+    <br><br>
+    <fieldset class="fio">
+    <img src="img/7.jpg" alt="">
+    </fieldset>
+    <br><br>
+    <input type="button" onclick="Apertar0()" class="botao" value="Aqui">
+    <br><br>
+    <fieldset class="fio">
+    <img src="img/4.jpg" alt="">
+    </fieldset>
+    <br><br>
+    <input type="button" onclick="Apertar1()" class="botao" value="Clique">
+    <br><br>
+    <fieldset class="fio">
+    <img src="img/2.jpg" alt="">
+    </fieldset>
+    <br><br>
+    <input type="button" onclick="Apertar2()" class="botao" value="Clique">
+    <br><br>
+    <H1>Agora prencha seus dados para ganhar um ingresso para</H1>
+    <h1>TURNE DOS NAMORADOS</h1>
+    <fieldset class="fio">
+    <img src="img/5.jpeg" alt="">
+    </fieldset>
+    <br><br>
+    <input type="button" onclick="Apertar3()" class="botao" value="Ingresso">
+    </center>
+
+    <script>
+        function Apertar0() {
+            Swal.fire({
+                title: "Continue apertando para ganhar premios de GRAÇA!!!",
+                width: 600,
+                padding: "3em",
+                color: "#716add",
+                background: "#fff url(/images/trees.png)",
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nyan-cat.gif")
+                  left top
+                  no-repeat
+                `
+              });
+          }
+      function Apertar1() {
+        Swal.fire({
+            title: "PARABÈNS!",
+            text: "Você ganhou um quadro anavitória e nado reis ",
+            imageUrl: "https://http2.mlstatic.com/D_844034-MLB75810349604_042024-C.jpg",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Custom image"
+          });
+
+      }
+      
+      function Apertar2() {
+        Swal.fire({
+            title: "PARABÈNS!",
+            text: "Você ganhou um vinil de trevo! ",
+            imageUrl: "https://static.zattini.com.br/produtos/anavitoria-vinil-anavitoria-anavitoria-180-gramas-translucido-(branco)-vinil-anavitoria/06/9XS-0977-006/9XS-0977-006_zoom2.jpg?ims=400x",
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: "Custom image"
+          });
+      }
+        function Apertar3(){
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Acho vc foi enganado TROXA!!!",
+                footer: '<a href="#">algum problema???</a>'
+              });
+
+        }
+       
+    </script>
+</body>
+</html>
